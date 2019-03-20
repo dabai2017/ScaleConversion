@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="10dp"
+	android:orientation="vertical"
+	android:background="#FFDCD5D5">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="left|center"
+		android:background="#FFFFFFFF">
+
+		<TextView
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:text="二进制"
+			android:gravity="center"
+			android:textSize="16sp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:digits="01"
+			android:layout_height="wrap_content"
+			android:background="#FFFFFFFF"
+			android:hint="转换二进制"
+			android:id="@+id/ET_2"
+			android:lines="5"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="left|center"
+		android:background="#FFFFFFFF">
+
+		<TextView
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:text="十进制"
+			android:gravity="center"
+			android:textSize="16sp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:digits="0123456789"
+			android:layout_height="wrap_content"
+			android:background="#FFFFFFFF"
+			android:hint="转换十进制"
+			android:id="@+id/ET_10"
+			android:ems="50"
+			android:lines="5"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="left|center"
+		android:background="#FFFFFFFF">
+
+		<TextView
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:text="八进制"
+			
+			android:gravity="center"
+			android:textSize="16sp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:digits="0123456789"
+			android:layout_height="wrap_content"
+			android:background="#FFFFFFFF"
+			android:hint="转换八进制"
+			android:id="@+id/ET_8"
+			android:lines="5"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="left|center"
+		android:background="#FFFFFFFF">
+
+		<TextView
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="十六进制"
+			android:textSize="16sp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:digits="0123456789ABCDEFabcdef"
+			android:layout_height="wrap_content"
+			android:background="#FFFFFFFF"
+			android:hint="转换十六进制"
+			android:id="@+id/ET_16"
+			android:lines="5"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:background="#FFFFFFFF"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="100dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="7"
+				android:layout_weight="1.0"
+				android:background="#FFFFFFFF"
+				android:onClick="bu_7"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="4"
+				android:layout_weight="1.0"
+				android:background="#FFFFFFFF"
+				android:onClick="bu_4"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="1"
+				android:onClick="bu_1"
+				android:layout_weight="1.0"
+				android:background="#FFFFFFFF"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0"
+				android:onClick="bu_0"
+				android:layout_weight="1.0"
+				android:background="#FFFFFFFF"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="8"
+				android:onClick="bu_8"
+				android:layout_weight="1.0"
+				android:background="#FFFFFFFF"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="5"
+				android:onClick="bu_5"
+				android:layout_weight="1.0"
+				android:background="#FFFFFFFF"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="2"
+				android:onClick="bu_2"
+				android:layout_weight="1.0"
+				android:background="#FFFFFFFF"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="A"
+				android:onClick="bu_A"
+				android:layout_weight="1.0"
+				android:background="#FFFFFFFF"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="9"
+				android:onClick="bu_9"
+				android:background="#FFFFFFFF"
+				android:layout_weight="1.0"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="6"
+				android:onClick="bu_6"
+				android:background="#FFFFFFFF"
+				android:layout_weight="1.0"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="3"
+				android:onClick="bu_3"
+				android:layout_weight="1.0"
+				android:background="#FFFFFFFF"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="B"
+				android:onClick="bu_B"
+				android:background="#FFFFFFFF"
+				android:layout_weight="1.0"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="F"
+				android:onClick="bu_F"
+				android:layout_weight="1.0"
+				android:background="#FFFFFFFF"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="E"
+				android:onClick="bu_E"
+				android:background="#FFFFFFFF"
+				android:layout_weight="1.0"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="D"
+				android:onClick="bu_D"
+				android:background="#FFFFFFFF"
+				android:layout_weight="1.0"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="C"
+				android:onClick="bu_C"
+				android:background="#FFFFFFFF"
+				android:layout_weight="1.0"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="&lt;"
+				android:onClick="bu_back"
+				android:background="#FFFFFFFF"
+				android:layout_weight="2"
+				android:id="@+id/bu_back1"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="清空"
+				android:onClick="bu_clear"
+				android:background="#FFFFFFFF"
+				android:layout_weight="1"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="."
+				android:onClick="bu_dian"
+				android:background="#FFFFFFFF"
+				android:layout_weight="1.0"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
